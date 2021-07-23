@@ -1,0 +1,29 @@
+.navbar_root {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 30px;
+  color: #0038ff;
+  font-weight: 400;
+}
+.navbar_item {
+  margin-left: 20px;
+  padding: 10px 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar_root {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0;
+    transform: rotate(90deg) translateY(48vw) translateX(50vw);
+  }
+  .navbar_item {
+    /* transform: rotate(90deg); */
+    background-color: #0038ff;
+    color: white;
+    border-radius: 10px 10px 0 0;
+  }
+}
