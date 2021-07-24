@@ -3,7 +3,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  padding: 30px;
+  padding: 20px;
   color: #0038ff;
   font-weight: 400;
 }
@@ -18,7 +18,7 @@
     justify-content: flex-start;
     align-items: flex-start;
     padding: 0;
-    transform: rotate(90deg) translateY(48vw) translateX(50vw);
+    transform: rotate(90deg) translateY(47.8vw) translateX(50vw);
   }
   .navbar_item {
     /* transform: rotate(90deg); */
