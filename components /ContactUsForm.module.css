@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+.contact_us_form_root {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+  height: 100vh;
+}
+.contact_us_form_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #0038ff;
+  width: 100%;
+}
+.contact_us_form_heading {
+  display: flex;
+  align-items: center;
+  font-family: "Dancing Script", cursive;
+  font-size: 3.5vw;
+}
+.contact_us_form_nameFields {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+.contact_us_form_input_subject {
+  display: flex;
+  align-items: center;
+
+  width: 100%;
+  padding: 10px;
+  background-color: #0037ff30;
+  color: #0038ff;
+  border: 0;
+  border-bottom: 2px solid #0037ff;
+  margin-bottom: 20px;
+
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+
+.contact_us_form_nameFields .contact_us_form_input {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  width: 49%;
+
+  background-color: #0037ff30;
+  margin-bottom: 20px;
+  color: #0038ff;
+  border: 0;
+  border-bottom: 2px solid #0037ff;
+
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+
+.contact_us_form_textArea {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  resize: vertical;
+
+  padding: 10px;
+  background-color: #0037ff30;
+  color: #0038ff;
+  border: 0;
+  border-bottom: 2px solid #0037ff;
+
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+
+.contact_us_form_input_subject::placeholder,
+.contact_us_form_input::placeholder,
+.contact_us_form_textArea::placeholder {
+  color: #0038ff;
+  font-weight: 400;
+}
+
+.contact_us_form_submitButton {
+  color: white;
+  background-color: #0038ff;
+  padding: 10px;
+  width: 100px;
+  margin-top: 20px;
+  font-size: 16px;
+}
+@media only screen and (max-width: 1024px) {
+  .contact_us_form_nameFields {
+    flex-direction: column;
+  }
+  .contact_us_form_nameFields .contact_us_form_input {
+    width: 100%;
+  }
+  .contact_us_form_textArea {
+  }
+}

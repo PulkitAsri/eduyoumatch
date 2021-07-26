@@ -1,0 +1,21 @@
+.contact_us_root {
+  display: flex;
+}
+.contact_us_showcase {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact_us_logo_heading {
+  position: absolute;
+  left: 20px;
+  top: 80px;
+  writing-mode: vertical-rl;
+  text-orientation: sideways;
+}
+
+@media only screen and (max-width: 768px) {
+  .contact_us_logo_heading {
+    display: none;
+  }
+}
