@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
 .contact_us_form_root {
   display: flex;
   flex-direction: column;
@@ -18,7 +19,7 @@
   display: flex;
   align-items: center;
   font-family: "Dancing Script", cursive;
-  font-size: 3.5vw;
+  font-size: 48px;
 }
 .contact_us_form_nameFields {
   display: flex;
@@ -58,6 +59,12 @@
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
 }
+.contact_us_form_input:hover,
+.contact_us_form_input:link,
+.contact_us_form_input:active,
+.contact_us_form_input:focus {
+  color: #0038ff;
+}
 
 .contact_us_form_textArea {
   display: flex;
@@ -70,7 +77,7 @@
   background-color: #0037ff30;
   color: #0038ff;
   border: 0;
-  border-bottom: 2px solid #0037ff;
+  border-bottom: 2px solid #0038ff;
 
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
@@ -84,14 +91,58 @@
 }
 
 .contact_us_form_submitButton {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
   color: white;
   background-color: #0038ff;
   padding: 10px;
   width: 100px;
   margin-top: 20px;
   font-size: 16px;
+  border: 0;
 }
-@media only screen and (max-width: 1024px) {
+
+.contact_us_form_footer {
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contact_us_form_footer_left {
+  display: flex;
+  align-items: center;
+}
+.contact_us_form_footer_right {
+  display: flex;
+}
+.contact_us_form_footer_right .info_card {
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+
+  margin-right: 1.5vw;
+}
+
+.contact_us_form_footer_left a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 60px;
+  height: 60px;
+  background-color: #0038ff;
+  color: white;
+  border: 0;
+  border-radius: 100%;
+  margin-right: 1.5vw;
+}
+.contact_us_form_footer_left .social_icon {
+  transform: scale(1.5);
+}
+
+@media only screen and (max-width: 768px) {
   .contact_us_form_nameFields {
     flex-direction: column;
   }
@@ -99,5 +150,6 @@
     width: 100%;
   }
   .contact_us_form_textArea {
+    height: 150px;
   }
 }

@@ -12,10 +12,7 @@ function ContactUs() {
         <meta name="description" content="Next Education Platform" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className={ContactUsStyles.contact_us_showcase}>
-        <Navbar />
-        <h1 className={ContactUsStyles.contact_us_logo_heading}>EdYouMatch</h1>
-      </div>
+
       <ContactUsForm />
     </div>
   );
