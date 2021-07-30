@@ -1,0 +1,32 @@
+.spinner {
+  width: 50px;
+  height: 50px;
+  position: relative;
+}
+.spinner div {
+  box-sizing: border-box;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 5px solid transparent;
+  border-top-color: #0038ff;
+  border-radius: 50%;
+  animation: spinnerAnimation 1.5s linear infinite;
+}
+
+.spinner div:nth-child(2) {
+  border: 5px solid transparent;
+  border-bottom-color: #0038ff;
+}
+
+@keyframes spinnerAnimation {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

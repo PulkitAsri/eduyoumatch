@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import Navbar from "../components /Navbar";
 import Styles from "../styles/Help/Help.module.css";
 import SearchIcon from "@material-ui/icons/Search";
+import Spinner from "../components /Spinner";
 
 function help() {
   const [searchText, setsearchText] = useState("");
@@ -26,7 +27,7 @@ function help() {
       document.removeEventListener("keydown", listener);
     };
   }, []);
-
+  return <Spinner />;
   return (
     <div className={Styles.help_root}>
       {/* TO BE UPDATED BY LATEST NAVBAR */}
