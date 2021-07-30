@@ -38,6 +38,9 @@
 .body_centre h2 {
   color: #0038ff;
 }
+.body_centre h3 {
+  margin: 0 30px;
+}
 .body_centre a {
   color: #0038ff;
   text-decoration: underline;
@@ -55,8 +58,8 @@
   display: flex;
   margin-top: 20px;
   background-color: white;
-  padding: 10px;
-  width: 90%;
+  padding: 8px;
+  width: 95%;
   box-shadow: 0 4px 8px 0 #6f6f6f;
   border-radius: 15px;
 }
@@ -71,6 +74,7 @@
   background-color: #0038ff;
   border: 0;
   display: flex;
+  align-items: center;
   color: white;
   padding: 10px 25px;
   border-radius: 10px;
@@ -89,12 +93,12 @@
   text-align: center;
 }
 .card h2 {
+  margin-bottom: 10px;
 }
 .card span {
   margin: 0 30px;
 }
-@media (max-width: 1024px) {
-}
+
 @media (max-width: 768px) {
   .image_container {
     display: none;
@@ -104,5 +108,33 @@
   }
   .hidden_image_background {
     display: block;
+  }
+
+  .search_bar {
+    width: 80%;
+    padding: 1vw;
+  }
+
+  .search_bar button {
+    padding-left: 3vw;
+    padding-right: 3vw;
+  }
+  .search_bar button span {
+    display: none;
+  }
+  .body_centre h1 {
+  }
+  .body_centre h2 {
+  }
+  .body_centre a {
+  }
+}
+
+@media (max-width: 550px) {
+  .help_footer {
+    flex-direction: column;
+  }
+  .body_centre h1 {
+    font-size: 10vw;
   }
 }

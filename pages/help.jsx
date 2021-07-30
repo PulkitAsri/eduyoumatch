@@ -1,9 +1,32 @@
-import { Style } from "@material-ui/icons";
-import React from "react";
+import { InputTwoTone, Style } from "@material-ui/icons";
+import React, { useEffect, useState } from "react";
 import Navbar from "../components /Navbar";
 import Styles from "../styles/Help/Help.module.css";
+import SearchIcon from "@material-ui/icons/Search";
 
 function help() {
+  const [searchText, setsearchText] = useState("");
+
+  const handleClick = () => {
+    //Handle search Here
+
+    setsearchText("");
+  };
+
+  //for Enter To Search(add listner on mount)
+  useEffect(() => {
+    const listener = (event) => {
+      if (event.code === "Enter" || event.code === "NumpadEnter") {
+        event.preventDefault();
+        handleClick();
+      }
+    };
+    document.addEventListener("keydown", listener);
+    return () => {
+      document.removeEventListener("keydown", listener);
+    };
+  }, []);
+
   return (
     <div className={Styles.help_root}>
       {/* TO BE UPDATED BY LATEST NAVBAR */}
@@ -22,8 +45,15 @@ function help() {
           <h2>Help And Support</h2>
           <span>How Can We Help You?</span>
           <div className={Styles.search_bar}>
-            <input placeholder="Search" />
-            <button>Search</button>
+            <input
+              placeholder="Search"
+              onChange={(e) => setsearchText(e.target.value)}
+              value={searchText}
+            />
+            <button onClick={handleClick}>
+              <SearchIcon />
+              <span>Search</span>
+            </button>
           </div>
           <h1>EduYouMatch</h1>
           <h2>For You, Always</h2>
@@ -52,6 +82,7 @@ function help() {
           <span>Having some privacy issue? we can help you right away!</span>
         </div>
       </div>
+      {console.log(searchText)}
     </div>
   );
 }
