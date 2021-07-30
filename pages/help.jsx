@@ -27,7 +27,6 @@ function help() {
       document.removeEventListener("keydown", listener);
     };
   }, []);
-  return <Spinner />;
   return (
     <div className={Styles.help_root}>
       {/* TO BE UPDATED BY LATEST NAVBAR */}
